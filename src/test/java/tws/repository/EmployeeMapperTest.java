@@ -23,12 +23,8 @@ public class EmployeeMapperTest {
     @Autowired
     private  EmployeeMapper employeeMapper;
 
-    JdbcTemplate jdbcTemplate;
-
     @Autowired
-    public void setDataSource(DataSource dataSource) {
-        this.jdbcTemplate = new JdbcTemplate(dataSource);
-    }
+    JdbcTemplate jdbcTemplate;
 
     @After
     public void tearDown() throws Exception {
